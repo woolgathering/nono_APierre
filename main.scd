@@ -15,7 +15,7 @@ metaEnvir.harmBus = Bus.audio(s, 1);
 metaEnvir.delFiltBus = Bus.audio(s, 1);
 metaEnvir.revBus = Bus.audio(s, 1);
 metaEnvir.outBus = Array.fill(4, {Bus.audio(s,1)}); // fill an array with four busses for output
-metaEnvir.thisDir = "path/to/this/file".standardizePath; // set the directory
+metaEnvir.thisDir = "path/to/this/file".standardizePath; // set the directory (SCIDE: thisProcess.nowExecutingPath.dirname)
 metaEnvir.freeables = List.with( // a list for freeable objects
   metaEnvir.harmBus, metaEnvir.delFiltBus, metaEnvir.revBus, metaEnvir.outBus // busses
 );
