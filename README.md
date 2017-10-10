@@ -1,11 +1,11 @@
-# nono_APierre
+# Electronics for Luigi Nono's A Pierre. Dell'Azzurro Silenzio, Inquietum
 Electronics in SuperCollider for Luigi Nono's A Pierre. Dell'Azzurro Silenzio, Inquietum.
 
 ## Before beginning
 Some slight changes must be made in order for this to function:
 
 ### Get an impulse response
-The reverb uses a convolution reverb which requires an impulse response. For a great collection of free responses, see [The Echo Theif](http://www.echothief.com/).
+The reverb uses a convolution reverb which requires an impulse response. For a great collection of free responses, see [The Echo Thief](http://www.echothief.com/).
 
 ### Modify paths
 In main.scd, the following lines must be modified:
