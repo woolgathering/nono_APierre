@@ -90,14 +90,14 @@
         }
     },
     73 // midi CC number
-  );  
+  );
 
 
 // zero everything out
   midi.init = {|envir|
-    MIDIClient.init; // start midi
-    MIDIIn.connectAll; // connect midi
-    midi.out = MIDIOut.newByName("BCF2000", "Port 1"); // for sending midiout
+    // MIDIClient.init; // start midi
+    // MIDIIn.connectAll; // connect midi
+    // midi.out = MIDIOut.newByName("BCF2000", "Port 1"); // for sending midiout
 
     // set the outputs to 0
     [81,82,83,84].do{|val|

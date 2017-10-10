@@ -16,11 +16,21 @@ In main.scd, the following lines must be modified:
 
   Change the path to whatever the directory is that main.scd is placed in. If you're using the SC IDE or Emacs, using `thisProcess.nowExecutingPath.dirname` should work fine.
 
-- Line 36:
+- Line 37:
 
   `rev.irPath = "path/to/your/impulse/response".standardizePath;`
 
   Set the path to your impulse response.
 
 ### Check your MIDI device
+
+#### Set your MIDI device
+Also in main.scd:
+
+  - Line 32:
+
+    `midi.out = MIDIOut.newByName("yerMIDIdevice", "Port 1"); // for sending midiout`
+
+    Set your MIDI device however you wish. Using .newByName is an easy way to ensure you connect with the correct device and port each time.
+
 In all likelihood, you'll need to modify the MIDI CC channels for your device. This can be done in SC/midi.scd. A function is available there that clears the reverb buffers to better facilitate rehearsals.

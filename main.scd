@@ -29,6 +29,7 @@ metaEnvir.guiEnvir = gui;
 midi.faders = Array.fill(8,{0});
 midi.knobs = Array.fill(8,{0});
 midi.buttons = Array.fill(2,{Array.fill(8,{0})}); // a 2D array
+midi.out = MIDIOut.newByName("myMIDIdevice", "Port 1"); // for sending midiout
 
 //////// reverb environment ////////
 rev.fftSize = 2048; // size of our partition
